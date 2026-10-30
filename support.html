@@ -14,20 +14,29 @@
 
     <p>Questions, bug reports, and feature requests are welcome.</p>
     <p>Email: <a href="mailto:humorwu@gmail.com">humorwu@gmail.com</a></p>
-    <p class="note">When reporting a bug, please include the app version, Windows version, what you did, and what happened. A screenshot helps.</p>
+    <p class="note">When reporting a bug, please include the app version, macOS version, what you did, and what happened. A screenshot helps.</p>
 
     <h2>System requirements</h2>
     <ul>
-      <li>Windows 10 version 1903 (build 18362) or later, or Windows 11</li>
-      <li>x64 or ARM64</li>
-      <li>Microsoft Edge WebView2 Evergreen Runtime (included with Windows 11; Windows 10 may need it)</li>
+      <li>macOS 15 or later</li>
+      <li>Apple Silicon or Intel Mac</li>
     </ul>
 
-    <h2>Where are my settings stored?</h2>
-    <p>Settings, sessions, and prediction data stay on your device in the app's MSIX package container. They are not uploaded and are removed when you uninstall the app.</p>
+    <h2>A folder will not open</h2>
+    <p>The App Store edition can only access folders you grant. Open <strong>Settings → Permissions → File Access</strong>, click <strong>Add Folder…</strong>, and choose the folder or one of its parent folders.</p>
+    <p>The direct edition can access the file system, but protected locations such as Desktop, Documents, or external volumes may need Full Disk Access in <strong>System Settings → Privacy &amp; Security</strong>.</p>
 
-    <h2>How do I uninstall?</h2>
-    <p>Open <strong>Settings → Apps → Installed apps</strong>, find <strong>Caelum Files</strong>, and choose <strong>Uninstall</strong>. You can also right-click the app in the Start menu.</p>
+    <h2>Terminal does not open</h2>
+    <p>Allow Caelum Files to control your terminal in <strong>System Settings → Privacy &amp; Security → Automation</strong>. You can also choose a different terminal in <strong>Settings → Terminal</strong>.</p>
+
+    <h2>Archive cannot be extracted</h2>
+    <p>Caelum Files supports ZIP, TAR, TAR.GZ, and GZ. Encrypted ZIP, RAR, 7Z, bzip2, and zstd archives are not supported. Absolute paths, <code>..</code>, and symlink escapes are rejected by design.</p>
+
+    <h2>How do I change the language?</h2>
+    <p>Caelum Files follows the system language. On macOS 13 or later, you can choose a language for Caelum Files only in <strong>System Settings → Language &amp; Region → Applications → Caelum Files</strong>.</p>
+
+    <h2>Where are my settings and session stored?</h2>
+    <p>In the app's sandbox container on the App Store edition, or in the standard preferences folder for the direct edition. Removing the app or its container resets them.</p>
 
     <h2>Does Caelum Files collect data?</h2>
     <p>No. There is no telemetry, analytics, advertising, crash reporting, or account. See the <a href="privacy.html">privacy policy</a>.</p>
@@ -37,20 +46,29 @@
     <h1>支持</h1>
     <p>欢迎反馈问题、报告 Bug 或提出功能建议。</p>
     <p>邮箱：<a href="mailto:humorwu@gmail.com">humorwu@gmail.com</a></p>
-    <p class="note">报告问题时请附上应用版本、Windows 版本、操作步骤和实际结果；有截图更好。</p>
+    <p class="note">报告问题时请附上应用版本、macOS 版本、操作步骤和实际结果；有截图更好。</p>
 
     <h2>系统要求</h2>
     <ul>
-      <li>Windows 10 1903（内部版本 18362）或更高，或 Windows 11</li>
-      <li>x64 或 ARM64</li>
-      <li>Microsoft Edge WebView2 Evergreen 运行时（Windows 11 已内置；Windows 10 可能需要安装）</li>
+      <li>macOS 15 或更高</li>
+      <li>Apple Silicon 或 Intel Mac</li>
     </ul>
 
-    <h2>我的设置保存在哪里？</h2>
-    <p>设置、会话和预测数据只保存在本机的 MSIX 应用包容器中，不会上传，卸载应用后会被删除。</p>
+    <h2>文件夹打不开</h2>
+    <p>App Store 版只能访问你授权的文件夹。打开<strong>设置 → 权限 → 文件访问</strong>，点<strong>添加文件夹…</strong>，选择该文件夹或其上级文件夹。</p>
+    <p>直装版可以访问文件系统，但桌面、文稿、外置宗卷等受保护位置可能需要在<strong>系统设置 → 隐私与安全性</strong>中开启完全磁盘访问。</p>
 
-    <h2>如何卸载？</h2>
-    <p>打开 <strong>设置 → 应用 → 已安装的应用</strong>，找到 <strong>Caelum Files</strong>，选择<strong>卸载</strong>；也可以在开始菜单中右键应用卸载。</p>
+    <h2>终端没有打开</h2>
+    <p>在<strong>系统设置 → 隐私与安全性 → 自动化</strong>中允许 Caelum Files 控制终端。也可以在<strong>设置 → 终端</strong>中换一个终端程序。</p>
+
+    <h2>归档无法解压</h2>
+    <p>Caelum Files 支持 ZIP、TAR、TAR.GZ 和 GZ。加密 ZIP、RAR、7Z、bzip2、zstd 不受支持。绝对路径、<code>..</code>、符号链接逃逸等不安全路径会被拒绝。</p>
+
+    <h2>如何切换语言？</h2>
+    <p>Caelum Files 跟随系统语言。macOS 13 及以上可以在<strong>系统设置 → 语言与地区 → 应用程序 → Caelum Files</strong>中单独选择语言。</p>
+
+    <h2>设置和会话保存在哪里？</h2>
+    <p>App Store 版保存在应用的沙盒容器；直装版保存在标准 preferences 目录。删除应用或容器会重置这些数据。</p>
 
     <h2>Caelum Files 会收集数据吗？</h2>
     <p>不会。应用没有遥测、统计分析、广告、崩溃上报或账号。详见<a href="privacy.html">隐私政策</a>。</p>
